@@ -24,5 +24,5 @@ class CocktailsController < ApplicationController
 
   def cocktail_params
     params.require(:cocktail).permit(:name)
-  enddb
+  end
 end
