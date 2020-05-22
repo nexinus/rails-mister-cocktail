@@ -1,0 +1,12 @@
+<h1>Show page</h1>
+<ul class="list-group">
+  <% @cocktail.dose.each do |dose| %>
+    <li class="list-group-item">
+      <%= dose.description %>
+      <%= link_to "Remove",
+                  dose_path(dose),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+    </li>
+  <% end %>
+</ul>
