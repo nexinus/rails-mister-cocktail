@@ -1,7 +1,9 @@
 <div class="container">
-
   <h1><%= @cocktail.name %></h1>
-  <%= link_to "Back to all cocktails", root_path %>
+  <%= link_to "Back to all mocktails", root_path %>
+  <br>
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+
 
   <div class="row">
     <div class="col-sm-12 col-md-6">
